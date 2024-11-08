@@ -5,38 +5,39 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.app-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #ffdee6, #eafbc8, #c8f7ef, #edacac);
+  background-size: 800% 800%;
+  /* Scale up for a smoother animation */
+  animation: pastelGradientAnimation 10s ease infinite;
+}
+
+@keyframes pastelGradientAnimation {
+  0% {
+    background-position: 0% 20%;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    background-position: 100% 20%;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  100% {
+    background-position: 0% 20%;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

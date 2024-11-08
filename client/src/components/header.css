@@ -1,0 +1,78 @@
+/* header.css */
+.header {
+    position: relative;
+    background-color: white;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.header-left .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Add hover effect for logo text */
+.logo-text:hover {
+    color: #0073e6;
+    /* Change color on hover */
+}
+
+.header-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    /* Smooth transition for color */
+}
+
+/* Hover effect for navigation links */
+.header-nav a:hover {
+    color: #0073e6;
+    /* Change to your preferred hover color */
+}
+
+.header-right {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Style for Sign up and Sign in links */
+.signup,
+.signin {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    /* Smooth transition for color */
+}
+
+/* Hover effect for Sign up and Sign in links */
+.signup:hover,
+.signin:hover {
+    color: #0073e6;
+    /* Change to your preferred hover color */
+}
