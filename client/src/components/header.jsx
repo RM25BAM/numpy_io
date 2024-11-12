@@ -1,13 +1,12 @@
 import React from 'react';
 import './header.css';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.gif'
 function Header() {
     return (
         <header className="header">
             <div className="header-left">
                 <div className="logo">
-                    <img src={logo} alt="Postcrafts logo" className="logo-icon" />
-                    <span className="logo-text">NUMPY IO</span>
+                    <img src={logo} alt="logo" className="logo-icon" />
                 </div>
             </div>
             <nav className="header-nav">
@@ -16,6 +15,7 @@ function Header() {
                 <a href="#Contact">Contact</a>
             </nav>
             <div className="header-right">
+                <button onClick></button>
                 <a href="#signup" className="signup">Sign up</a>
                 <a href="#signin" className="signin">Sign in</a>
             </div>
