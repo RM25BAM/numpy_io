@@ -10,14 +10,23 @@ function Header() {
                 </div>
             </div>
             <nav className="header-nav">
-                <a href="#features">Features</a>
-                <a href="#AboutUs">About Us</a>
-                <a href="#Contact">Contact</a>
+                <button>
+                    <a href="#features">Features</a>
+                </button>
+                <button>
+                    <a href="#AboutUs">About Us</a>
+                </button>
+                <button>
+                    <a href="#Contact">Contact</a>
+                </button>
             </nav>
             <div className="header-right">
-                <button onClick></button>
-                <a href="#signup" className="signup">Sign up</a>
-                <a href="#signin" className="signin">Sign in</a>
+                <button onClick className="signup">
+                    <a href="#signup">Sign up</a>
+                </button>
+                <button onClick className="signin">
+                    <a href="#signin">Sign in</a>
+                </button>
             </div>
         </header>
     );
