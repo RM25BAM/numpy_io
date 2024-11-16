@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 .hero {
     display: flex;
     justify-content: center;
@@ -6,12 +8,46 @@
 }
 
 .text-container {
+    display: block;
+    /* Ensures it's treated as a block container */
+    width: 100%;
+    /* Makes the container span the entire width of the parent */
+    position: absolute;
+    /* Allows precise placement within the hero */
+    top: 35%;
+    /* Adjust this value to move the text vertically */
+    left: 15%;
+    /* Moves the text towards the left side */
     text-align: left;
-    padding: 20px;
-    max-width: 600px;
+    /* Ensures the text aligns to the left */
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #193a95;
+    text-align: left;
+}
+
+.text {
+    background: #193a95;
+    margin: 0;
+    text-align: left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-container {
+    .text-container {
+        width: 100%;
+        text-align: left;
+    }
 }

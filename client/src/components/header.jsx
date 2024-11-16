@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import logo from '../assets/logo.gif'
+import ReactTypingEffect from 'react-typing-effect';
 function Header() {
     return (
         <header className="header">
@@ -10,22 +11,22 @@ function Header() {
                 </div>
             </div>
             <nav className="header-nav">
-                <button>
-                    <a href="#features">Features</a>
+                <button className="btn">
+                    <a href="#features" className="">Features</a>
                 </button>
-                <button>
-                    <a href="#AboutUs">About Us</a>
+                <button className="btn">
+                    <a href="#AboutUs" className="">About Us</a>
                 </button>
-                <button>
+                <button className="btn">
                     <a href="#Contact">Contact</a>
                 </button>
             </nav>
             <div className="header-right">
                 <button onClick className="signup">
-                    <a href="#signup">Sign up</a>
+                    <a href="#signup" className="signup_text">Sign up</a>
                 </button>
                 <button onClick className="signin">
-                    <a href="#signin">Sign in</a>
+                    <a href="#signin" className="signin_text">Sign in</a>
                 </button>
             </div>
         </header>

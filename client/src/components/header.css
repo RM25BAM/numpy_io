@@ -1,7 +1,7 @@
 /* header.css */
 .header {
     position: relative;
-    background-color: white;
+    background-color: #fff;
     max-width: 1300px;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@
 }
 
 .header-nav a {
-    color: black;
+    color: #193a95;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
@@ -51,28 +51,83 @@
 
 /* Hover effect for navigation links */
 .header-nav a:hover {
-    color: #0073e6;
+    color: #fff;
     /* Change to your preferred hover color */
 }
 
 .header-right {
     display: flex;
     gap: 1rem;
+    border-color: #fff;
 }
 
-/* Style for Sign up and Sign in links */
+.header-right {
+    color: #fff;
+}
+
 .signup,
 .signin {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    /* Smooth transition for color */
+    transition: color 0.9s ease;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #fff;
+    border: 10px solid transparent;
+
+
+
+
 }
 
-/* Hover effect for Sign up and Sign in links */
 .signup:hover,
 .signin:hover {
-    color: #0073e6;
-    /* Change to your preferred hover color */
+    background: #193a95;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
+
 }
+
+.btn {
+    transition: color 0.9s ease;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #fff;
+    border: 10px solid transparent;
+}
+
+.btn:hover {
+    background: linear-gradient(-70deg, #c3d1ff, #7392e5, #7392e5, #c3d1ff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.signin_text,
+.signup_text {
+    color: #193a95;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.signin_text:hover,
+.signup_text:hover {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* }#c3d1ff, #7392e5, */

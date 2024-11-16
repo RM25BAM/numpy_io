@@ -2,14 +2,18 @@ import React from 'react';
 import './App.css';
 import Header from './components/header.jsx';
 import Hero from './components/hero.jsx';
-import Spline from '@splinetool/react-spline';
+import Feature from './components/features.jsx';
+import About from './components/about.jsx';
+import Contact from './components/contact.jsx'
 
 export default function App() {
   return (
     <div>
-      <Spline className="app-background" scene="https://prod.spline.design/gqqOp-dCOfuuES3D/scene.splinecode" />
       <Header />
       <Hero />
+      <Feature />
+      <About />
+      <Contact />
     </div>
   );
 }
