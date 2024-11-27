@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
 
 .hero {
     display: flex;
@@ -9,26 +10,29 @@
 
 .text-container {
     display: block;
-    /* Ensures it's treated as a block container */
     width: 100%;
-    /* Makes the container span the entire width of the parent */
     position: absolute;
-    /* Allows precise placement within the hero */
-    top: 35%;
-    /* Adjust this value to move the text vertically */
+    top: 25%;
     left: 15%;
-    /* Moves the text towards the left side */
     text-align: left;
-    /* Ensures the text aligns to the left */
+}
+
+.text-container2 {
+    display: block;
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: left;
 }
 
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #193a95;
     text-align: left;
 }
 
+/* #193a95 */
 .text {
     background: #193a95;
     margin: 0;
@@ -45,9 +49,22 @@ h1 {
     font-style: normal;
 }
 
+.fira-sans-semibold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .text-container {
     .text-container {
         width: 100%;
         text-align: left;
     }
+}
+
+p {
+    font-size: 1 rem;
+    margin-bottom: 20px;
+    color: #040e38;
+    text-align: left;
 }
