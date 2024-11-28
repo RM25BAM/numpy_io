@@ -1,8 +1,15 @@
 import React from 'react';
 import './header.css';
 import logo from '../assets/logo.gif'
-
+import { useNavigate } from 'react-router-dom';
 function Header() {
+    const navigate = useNavigate();
+    const SignIn = () => {
+        navigate('/signin');
+    }
+    const SignUp = () => {
+        navigate('/signup');
+    }
     return (
         <header className="header">
             <div className="header-left">
@@ -22,11 +29,11 @@ function Header() {
                 </button> */}
             </nav>
             <div className="header-right">
-                <button onClick className="signin">
-                    <a href="#signin" className="signin_text">Sign in</a>
+                <button onClick={SignIn} className="signin signin_text" >
+                    {/* <a href="#signin" className="signin_text"> */}Sign in
                 </button>
-                <button onClick className="signup">
-                    <a href="#signup" className="signup_text">Sign up</a>
+                <button onClick={SignUp} className="signup signup_text">
+                    {/* <a href="#signup" className="signup_text"> */}Sign up
                 </button>
             </div>
         </header>

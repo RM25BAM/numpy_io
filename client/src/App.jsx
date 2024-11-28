@@ -1,16 +1,20 @@
-import React from 'react';
+import React/* , { useState, useEffect } */ from 'react';
 import './App.css';
-import Header from './components/header.jsx';
-import Hero from './components/hero.jsx';
-import PreLoader from './components/PreLoader.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import SignIn from './pages/sign_in';
+import SignUp from './pages/sign_up';
+
 export default function App() {
   return (
-    <>
-      <PreLoader />
-      <div>
-        <Header />
-        <Hero />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+/* const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />); */
