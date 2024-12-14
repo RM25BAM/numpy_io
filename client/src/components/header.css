@@ -1,16 +1,17 @@
-/* header.css */
 .header {
-    position: relative;
-    background-color: #fff;
-    max-width: 1300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: flex;
+    background-color: transparent;
+    height: 60px;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
     justify-content: space-between;
-    padding: 20px 25px;
-    border-radius: 35px;
-    z-index: 1;
+    margin: 0 auto;
+    z-index: 20;
+    padding-top: 10px;
 }
 
 .header-left .logo {
@@ -19,7 +20,7 @@
 }
 
 .logo-icon {
-    width: 120px;
+    width: 180px;
     height: 30px;
     margin-right: 8px;
 }
@@ -30,10 +31,8 @@
     color: black;
 }
 
-/* Add hover effect for logo text */
 .logo-text:hover {
     color: #0073e6;
-    /* Change color on hover */
 }
 
 .header-nav {
@@ -46,19 +45,21 @@
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
-    /* Smooth transition for color */
 }
 
-/* Hover effect for navigation links */
 .header-nav a:hover {
     color: #fff;
-    /* Change to your preferred hover color */
 }
 
+/* Right Section Styles */
 .header-right {
     display: flex;
     gap: 1rem;
     border-color: #fff;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .header-right {
@@ -69,38 +70,43 @@
 .signin {
     transition: color 0.9s ease;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: transparent;
     color: #fff;
     border: 10px solid transparent;
-
-
-
-
+    text-align: center;
+    padding: 10px 20px;
 }
 
-.signup:hover,
-.signin:hover {
-    background: #193a95;
+.signin:hover,
+.signup:hover {
+    background: linear-gradient(-70deg, #7392e5, #783be1, #783be1, #7392e5);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: #fff;
-
 }
+
+.signin:hover .signin_text,
+.signup:hover .signup_text {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
 
 .btn {
     transition: color 0.9s ease;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: transparent;
     color: #fff;
     border: 10px solid transparent;
 }
 
 .btn:hover {
-    background: linear-gradient(-70deg, #c3d1ff, #7392e5, #7392e5, #c3d1ff);
+    background: linear-gradient(-50deg, #7392e5, #783be1, #783be1, #7392e5);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: #fff;
 }
+
 
 @keyframes gradient {
     0% {
@@ -121,13 +127,11 @@
     color: #193a95;
     font-size: 1rem;
     text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.3s ease;
 }
 
 .signin_text:hover,
 .signup_text:hover {
     color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
 }
-
-/* }#c3d1ff, #7392e5, */
