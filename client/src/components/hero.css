@@ -10,10 +10,10 @@
 
 .text-container {
     display: block;
-    width: 100%;
+    width: 40%;
     position: absolute;
-    top: 25%;
-    left: 15%;
+    top: 20%;
+    left: 10%;
     text-align: left;
 }
 
@@ -37,6 +37,7 @@ h1 {
     background: #193a95;
     margin: 0;
     text-align: left;
+    font-size: 80px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

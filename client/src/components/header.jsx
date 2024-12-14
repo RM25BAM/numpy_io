@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css';
-import logo from '../assets/logo.gif'
 import { useNavigate } from 'react-router-dom';
 function Header() {
     const navigate = useNavigate();
@@ -42,5 +41,3 @@ function Header() {
 };
 
 export default Header;
-
-/* #3b67e1 */

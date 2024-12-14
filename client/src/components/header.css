@@ -1,34 +1,17 @@
-/* header.css */
 .header {
     position: fixed;
-    /* Changed from relative to fixed */
     top: 0;
-    /* Ensures the header stays at the top */
+    left: 0;
     width: 100%;
-    /* Spans the full width of the viewport */
+    max-width: flex;
     background-color: transparent;
-    max-width: 1300px;
+    height: 60px;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 0;
-    /* Removed margin-top to avoid pushing it down */
     justify-content: space-between;
-    padding: 20px 25px;
-    border-radius: 25px;
+    margin: 0 auto;
     z-index: 20;
-    /* Increased to ensure it appears above other elements */
-    /*     position: relative;
-    background-color: transparent;
-    max-width: 1300px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    justify-content: space-between;
-    padding: 20px 25px;
-    border-radius: 25px;
-    z-index: 1; */
+    padding-top: 10px;
 }
 
 .header-left .logo {
@@ -73,6 +56,10 @@
     display: flex;
     gap: 1rem;
     border-color: #fff;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .header-right {
@@ -92,7 +79,7 @@
 
 .signin:hover,
 .signup:hover {
-    background: linear-gradient(-70deg, #7392e5, #335fd6, #335fd6, #7392e5);
+    background: linear-gradient(-70deg, #7392e5, #783be1, #783be1, #7392e5);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: #fff;
